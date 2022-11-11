@@ -45,7 +45,6 @@ body{
 .input[data-type="password"]{
   text-security:disc;
   -webkit-text-security:disc;
-  size: 150px;
 }
 .btn {
   margin-top: 15px;
