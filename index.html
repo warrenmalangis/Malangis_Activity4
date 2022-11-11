@@ -4,21 +4,22 @@
   <head>
     <meta charset="UTF-8">
     <title>Activity 4 | Redesign</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
-      <div>
-      <img class="container" src="image/icon.png">
+      <div style="text-align: center;">
+      <img class="container__image" src="image/icon.png">
       </div>
-      <form  class="form" action="#" method="post">
-        <div class="login">
+      <form  class="container__form" action="#" method="post">
+        <div class="container__login">
           <label for="user" class="label">Yahoo ID</label>
           <input id="user" type="text" class="input" required>
 
           <label for="pass" class="label">Password</label>
           <input id="pass" type="text" class="input" data-type="password" required>
 
-        <div class="checkbox">
+        <div class="login__checkbox">
           <input id="check1" type="checkbox" class="check" >
           <label for="check1"><span class="icon"></span> Remember my ID & password</label>
 
@@ -31,10 +32,10 @@
           <input type="submit" class="btn" value="Sign In">
 
         <center>
-        <p class="statement">Still no ID? <a class="options" href="#">Get a New Yahoo ID... </a><p>
+          <p class="statement">Still no ID? <a class="options" href="#">Get a New Yahoo ID... </a><p>
 
         <a class="options" href="#">Forgot Password? </a>
-        </center>
+      </center>
 
       <div class="drop-down">
         <select class="language" name="format" id="format">
@@ -45,7 +46,7 @@
         <option value="japanese">Japanese(日本語)</option>
         <option value="korean">Korean(한국어)</option>
       </select>
-        </div>
+      </div>
         </div>
       </form>
     </div>
