@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+body{
+  background: #e3e4e5;
+  height: 100vh;
+  overflow: hidden;
+  background: #252c3e;
+  line-height: 1.2;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 550px;
+  background: linear-gradient(120deg,#eef0be, #98b4c2);
+  border-radius: 10px;
+  border: 2px solid #555554;
+  box-shadow: 10px 10px 15px rgba(80,80,80,0.05);
+}
+.container__form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.container__image {
+  width: 180px;
+  height: 55px;
+  margin-top: 27px;
+  margin-bottom: 25px;
+
+}
+.input {
+  width: 100%;
+  height: 30px;
+  background: #ececeb;
+  border-radius: 4px;
+  border: 1px solid silver;
+  margin: 10px 0 18px 0;
+  padding: 0 10px;
+}
+.input input[data-type="password"]{
+  text-security:disc;
+  -webkit-text-security:disc;
+}
+.btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: linear-gradient(120deg,#2980b9, #8a2a8f);
+  box-shadow: 1px 2px #969292;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  transition: .3s;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.label {
+  font-size: 13px;
+}
+
+.login__checkbox input + label {
+  display: block;
+  font-size: 13px;
+}
+.icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(134,132,132,.2);
+}
+.check{
+  display:none;
+}
+.check:before {
+  display: inline-block;
+}
+.icon:before, .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#6d3383;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+}
+.icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+}
+.icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.check:checked + .icon{
+  color:#000000;
+}
+.check:checked + label .icon{
+  background:#ebeced;
+}
+.check:checked + label .icon:before{
+  transform:scale(1) rotate(45deg);
+}
+.check:checked + label .icon:after{
+  transform:scale(1) rotate(-45deg);
+}
+.options{
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 590;
+}
+.statement {
+  font-size: 13px;
+  font-weight: 600;
+}
+.options:hover {
+  opacity: 0.7;
+}
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 45px;
+  position: relative;
+  overflow: hidden;
+}
+.language {
+  flex: 1;
+  padding: 0 .5rem;
+  cursor: pointer;
+  border-color: #d8d6d6;
+  font-family: inherit;
+}
+.language::-ms-expand {
+  display: none;
+}
+
