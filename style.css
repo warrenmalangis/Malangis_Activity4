@@ -42,9 +42,11 @@ body{
   margin: 10px 0 18px 0;
   padding: 0 10px;
 }
-.input input[data-type="password"]{
+.input[data-type="password"]{
   text-security:disc;
   -webkit-text-security:disc;
+  size: 150px;
+  font-size: 30px;
 }
 .btn {
   margin-top: 15px;
