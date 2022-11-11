@@ -12,14 +12,13 @@ body{
 
 .container{
   position: absolute;
-  display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px ;
-  height: 550px;
   max-width: 100%;
   max-height: 100%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 550px;
   background: linear-gradient(120deg,#eef0be, #98b4c2);
   border-radius: 10px;
   border: 2px solid #555554;
@@ -45,7 +44,7 @@ body{
   margin: 10px 0 18px 0;
   padding: 0 10px;
 }
-.input[data-type="password"]{
+.input input[data-type="password"]{
   text-security:disc;
   -webkit-text-security:disc;
 }
@@ -134,7 +133,7 @@ body{
 .options:hover {
   opacity: 0.7;
 }
-.container__dropdown {
+.drop-down {
   display: flex;
   flex-direction: column;
   align-items: center;
